@@ -3,18 +3,103 @@
     padding: 0;
 }
 #home-screen{
-
-    width: 100vw;
-    height: 100vh;
-    background-color: honeydew;
     text-align: center;
 }
 
 #welcome-text{
-    padding-top: 2%;
+    margin: 0;
+    padding: 0;
 }
 
 #change-bg-color{
     color: brown;
     margin-top: 3%;
 }
+
+.jura-body {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.racing-sans {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-img{
+    display: block;
+    /*      TB  LR */
+    margin: 0px auto;
+    width: auto;
+    max-width: auto;
+}
+.princess-img{
+    display: block;
+    /*      TB  LR */
+    margin: 0px auto;
+    width: auto;
+    max-width: auto;
+}
+.arbenz-img{
+    display: block;
+    /*      TB  LR */
+    margin: 0px auto;
+    width: auto;
+    max-width: auto;
+}
+.lumumba-img{
+    display: block;
+    /*      TB  LR */
+    margin: 0px auto;
+    width: auto;
+    max-width: auto;
+}
+.allende-img{
+    display: block;
+    /*      TB  LR */
+    margin: 0px auto;
+    width: auto;
+    max-width: auto;
+}
+.mugshot-img{
+    display: block;
+    /*      TB  LR */
+    margin: 0px auto;
+    width: auto;
+    max-width: auto;
+}
+
+.wrapper.four {
+    background-color: ;
+    font-size: 2rem;
+    font-family: "Racing Sans One", sans-serif;
+}
+.four .type{
+    padding: 0% 0%;
+    width: auto;
+    margin: auto;
+}
+.four h2 {
+    width: auto;
+    border-right: 4px solid black;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+}
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+</style>
