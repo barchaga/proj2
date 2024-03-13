@@ -36,7 +36,7 @@
     width: auto;
     max-width: auto;
 }
-.princess-img{
+.queen-img{
     display: block;
     /*      TB  LR */
     margin: 0px auto;
@@ -72,34 +72,149 @@
     max-width: auto;
 }
 
-.wrapper.four {
-    background-color: ;
-    font-size: 2rem;
-    font-family: "Racing Sans One", sans-serif;
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: none;
 }
-.four .type{
-    padding: 0% 0%;
-    width: auto;
-    margin: auto;
+.main_container{
+    margin: 6% 0 0 36%;
+    position: relative;
+    width: 25%;
 }
-.four h2 {
-    width: auto;
-    border-right: 4px solid black;
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+
+h1{
+    width: 100%;
+    margin-top: 30%;
+    color:white;
+    font-size: 4.5vw;
+    position: absolute;
+    text-align: left;
+    font-family: 'Racing Sans One', sans-serif;
 }
-@-webkit-keyframes typing {
-    from {
-        width: 0;
+h2{
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+    color: white;
+    font-size: 1.2vw;
+    margin: 60% 0 0 18%;
+    width: 70%;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
     }
-}
-@-webkit-keyframes blink-caret {
-    50% {
-        border-color: transparent;
+    100% {
+        opacity: 1;
     }
 }
 
 
-</style>
+style {
+    display: inline-block;
+    font: 700 18px/1.5 Jura, "Racing Sans", Monospace;
+    white-space: pre-wrap;
+    padding: 3rem;
+  }
+  
+.wrap {
+    border: 5px solid red;
+    padding: 1rem;
+    height: 50vh;
+    > style {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+body {
+    margin: 2px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+* {
+    box-sizing: border-box;
+  }
+  
+.child {
+    background: blue;
+    opacity: 0.6;
+    position: fixed;
+    top: 60%;
+    right: -25px;
+}
+.child:hover {
+    opacity: 0.6;
+  }
+
+
+.text {
+    width: 30em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+
+:root {
+    --button-padding: 1em;
+    --space-for-arrow: 2em;
+  }
+  
+  /* Move it away from the edge to make it easier to see */
+  body {
+    margin: 0px;
+  }
+  
+  button {
+    position: relative;
+    padding-block: .5em; /* top and bottom padding */
+    padding-inline-start: var(--space-for-arrow); /* left padding */
+    padding-inline-end: var(--button-padding); /*right padding */
+    border: none;
+    border-radius: .25em;
+    background-color: transparent;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: padding 250ms ease, background-color 250ms ease;
+  }
+  
+  button::before {
+    position: absolute;
+    content: '->';
+    background-size: 1em;
+    inset-block-start: 50%;
+    inset-inline-start: .25em;
+    transform: translateY(-50%);
+    padding: .25em;
+    border-radius: 50%;
+    background-color: red;
+    line-height: 1;
+    transition: inset-inline-start 250ms ease;
+  }
+  
+  button:hover {
+    padding-inline-start: var(--button-padding);  /* left padding */
+    padding-inline-end: var(--space-for-arrow);  /* right padding */
+    background-color: red;
+  }
+  
+  button:hover::before {
+    inset-inline-start: calc(100% - 1.75em);
+  }
+  
+
+}
